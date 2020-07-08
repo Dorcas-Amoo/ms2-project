@@ -39,10 +39,10 @@ img {
     display: flex;
     justify-content: space-between;
     margin-left: 4em;
-    margin-right: 5em;
+    margin-right: 7em;
 }
 
-/* --------------------------------------------------------------------------------------- Board-game & Cards*/
+/* --------------------------------------------------------------------------------------- Board-game & Cards Section*/
 
 .memory-game {
     width: 640px;
@@ -51,6 +51,7 @@ img {
     flex-wrap: wrap;
     margin: auto;
     padding-bottom: 2em;
+    perspective: 500px;
 }
 
 .card {
@@ -59,6 +60,8 @@ img {
     height: 33.33%;
     position: relative;
     border-radius: 15px;
+    transform: scale(1);
+    transform-style: preserve-3d;
     transition: transform .25s ease-in-out;
 }
 
