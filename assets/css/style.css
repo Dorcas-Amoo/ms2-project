@@ -52,6 +52,7 @@ img {
     margin: auto;
     padding-bottom: 2em;
     perspective: 500px;
+    
 }
 
 .card {
@@ -70,13 +71,22 @@ img {
   transition: transform .25s ease-in-out;
 }
 
+.card.flip {
+  transform: rotateY(180deg);
+}
+
 .front-card,
 .back-card{
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 20px;
+    backface-visibility: hidden;
     background: hsl(39, 92%, 44%);
+}
+
+.front-card {
+  transform: rotateY(180deg);
 }
 
 /* --------------------------------------------------------------------------------------- Footer*/
