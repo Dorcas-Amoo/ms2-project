@@ -59,6 +59,12 @@ img {
     height: 33.33%;
     position: relative;
     border-radius: 15px;
+    transition: transform .25s ease-in-out;
+}
+
+.card:active {
+  transform: scale(0.95);
+  transition: transform .25s ease-in-out;
 }
 
 .front-card,
