@@ -89,6 +89,11 @@ img {
   transform: rotateY(180deg);
 }
 
+
+.back-card:hover {
+    transform: scale(1.5);
+    transition: 5s ease-in-out;
+}
 /* --------------------------------------------------------------------------------------- Footer*/
 
 .copyright{
