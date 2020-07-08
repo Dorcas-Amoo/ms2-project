@@ -20,6 +20,9 @@ img {
 
 .game-title {
     text-align: center;
+    font-family: 'ultra', serif;
+    font-size: 350%;
+    color: #4a4a50;
 }
 
 .info-container {
