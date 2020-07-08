@@ -27,6 +27,9 @@ img {
 
 .info-container {
     text-align: center;
+    font-family: 'ultra', serif;
+    font-size: 200%;
+    padding-bottom: 20px;
 }
 
 .memory-game {
