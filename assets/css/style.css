@@ -14,9 +14,13 @@ body {
     background: hsl(39, 92%, 44%);
 }
 
+/* --------------------------------------------------------------------------------------- Images*/
+
 img {
     width: 100px;
 }
+
+/* -------------------------------------------------------------------------------------- Heading */
 
 .game-title {
     text-align: center;
@@ -24,6 +28,8 @@ img {
     font-size: 350%;
     color: #4a4a50;
 }
+
+/* --------------------------------------------------------------------------------------- Timer & Flips*/
 
 .info-container {
     text-align: center;
@@ -35,6 +41,8 @@ img {
     margin-left: 4em;
     margin-right: 5em;
 }
+
+/* --------------------------------------------------------------------------------------- Board-game & Cards*/
 
 .memory-game {
     width: 640px;
@@ -50,6 +58,7 @@ img {
     width: 25%;
     height: 33.33%;
     position: relative;
+    border-radius: 15px;
 }
 
 .front-card,
@@ -60,6 +69,8 @@ img {
     padding: 20px;
     background: hsl(39, 92%, 44%);
 }
+
+/* --------------------------------------------------------------------------------------- Footer*/
 
 .copyright{
     font-family: 'ultra', serif;
