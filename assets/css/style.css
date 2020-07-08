@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    height: 100vh;
     margin: 0;
     background: hsl(39, 92%, 44%);
 }
@@ -18,8 +19,17 @@ body {
     width: 640px;
     height: 640px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
     border: solid 5px red;
+    width: 25%;
+    height: 33.33%;
+    position: relative;
+}
+
+.front-card,
+.back-card{
+    position: absolute;
 }
