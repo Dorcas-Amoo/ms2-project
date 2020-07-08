@@ -30,6 +30,10 @@ img {
     font-family: 'ultra', serif;
     font-size: 200%;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4em;
+    margin-right: 5em;
 }
 
 .memory-game {
@@ -38,6 +42,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    padding-bottom: 2em;
 }
 
 .card {
@@ -54,4 +59,11 @@ img {
     height: 100%;
     padding: 20px;
     background: hsl(39, 92%, 44%);
+}
+
+.copyright{
+    font-family: 'ultra', serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-align: center;
 }
