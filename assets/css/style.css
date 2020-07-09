@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap:100,200,300,400,500,600,700');
 
+/*---------------------General (Credits: Influenced based on research & Code Institute)*/
+
 html {
     max-width: 100%;
 }
@@ -14,13 +16,13 @@ body {
     background: hsl(39, 92%, 44%);
 }
 
-/* --------------------------------------------------------------------------------------- Images*/
+/* -------------------------------------------------Images*/
 
 img {
     width: 100px;
 }
 
-/* -------------------------------------------------------------------------------------- Heading */
+/* ---------------------Heading (Credits: Influenced based on research & Web Dev Simplified Tutorial)*/
 
 .game-title {
     text-align: center;
@@ -29,7 +31,7 @@ img {
     color: #001068;
 }
 
-/* --------------------------------------------------------------------------------------- Timer & Flips*/
+/* ----------------Timer & Flips (Credits: Influenced based on research & Web Dev Simplified Tutorial)*/
 
 .info-container {
     text-align: center;
@@ -42,7 +44,7 @@ img {
     margin-right: 7em;
 }
 
-/* --------------------------------------------------------------------------------------- Board-game & Cards Section*/
+/* -----------Board-game & Cards Section (Credits: Influenced by Marina-Ferreira & Web Dev Simplified Tutorials)*/
 
 .memory-game {
     width: 640px;
@@ -89,12 +91,28 @@ img {
   transform: rotateY(180deg);
 }
 
-
 .back-card:hover {
     transform: scale(1.5);
     transition: 5s ease-in-out;
 }
-/* --------------------------------------------------------------------------------------- Footer*/
+
+/* ----------------Overlay Contents (Credits: Influenced based on research & Web Dev Simplified Tutorial)*/
+
+.overlay-msg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 156, 20);
+    font-family: 'ultra', serif;
+}
+
+/* -----------------------------Footer (Credits: Influenced based on research & Code Institute)*/
 
 .copyright{
     font-family: 'ultra', serif;
