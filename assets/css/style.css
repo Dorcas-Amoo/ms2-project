@@ -144,3 +144,15 @@ img {
     font-size: 3em;
   }
 }
+
+@media (max-width: 600px) {
+  .memory-game {
+    width: 320px;
+    height: 320px;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
