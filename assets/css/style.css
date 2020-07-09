@@ -54,7 +54,6 @@ img {
     margin: auto;
     padding-bottom: 2em;
     perspective: 500px;
-    
 }
 
 .card {
@@ -116,12 +115,12 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
   animation: overlay-grow 500ms forwards;
 }
 
 .overlay-msg-small{
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 /* -----------------------------Footer (Credits: Influenced based on research & Code Institute)*/
