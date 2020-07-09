@@ -114,7 +114,12 @@ img {
 
 .overlay-msg.visible {
   display: flex;
+  flex-direction: column;
   animation: overlay-grow 500ms forwards;
+}
+
+.overlay-msg-small{
+    font-size: 1em;
 }
 
 /* -----------------------------Footer (Credits: Influenced based on research & Code Institute)*/
