@@ -115,6 +115,8 @@ img {
 .overlay-msg.visible {
   display: flex;
   flex-direction: column;
+  margin-top: 3em;
+  margin-bottom: 1em;
   animation: overlay-grow 500ms forwards;
 }
 
