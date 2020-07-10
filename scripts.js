@@ -13,14 +13,15 @@ function cardFlip() {
         //Indicates first card is clicked
         cardIsFlipped = true;
         cardOne = this;
-}   else {
-        //Indicates second card is clicked
-        cardIsFlipped = false;
-        cardTwo = this;
+        return;
+    }
+    //Indicates second card is clicked
+    cardIsFlipped = false;
+    cardTwo = this;
 
-        checkForCardMatch();
-    }   
+    checkForCardMatch();  
 }
+
 //To check for card match
 function checkForCardMatch(){
     if (cardOne.dataset.name === cardTwo.dataset.name) {
