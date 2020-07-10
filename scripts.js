@@ -22,9 +22,14 @@ function cardFlip() {
     if (cardOne.dataset.name === cardTwo.dataset.name) {
         cardOne.removeEventListener('click', cardFlip);
         cardTwo.removeEventListener('click', cardFlip);
+}   else {
+      //Check if not a match and remove flip
+      setTimeout(() => {
+        cardOne.classList.remove('flip');
+        cardTwo.classList.remove('flip');
+        }, 1000);
     }
 
-    console.log('Success!');
   }
 }
 
