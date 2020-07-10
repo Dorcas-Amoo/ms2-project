@@ -42,7 +42,7 @@ function freezeCards() {
     resetBoard();
 }    
 
-//Check if not a match and remove flip
+//Check if cards are not a match and remove flip
 function unflipCards() {
     boardLock = true;
 

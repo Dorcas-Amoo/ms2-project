@@ -119,8 +119,13 @@ img {
   animation: overlay-grow 500ms forwards;
 }
 
-.overlay-msg-small{
+.overlay-msg-small {
     font-size: 0.7em;
+}
+
+.difficulty {
+    text-decoration: underline;
+    font-size: 0.5em;
 }
 
 /* -----------------------------Footer (Credits: Influenced based on research & Code Institute)*/

@@ -11,9 +11,11 @@
     <h1 class="game-title">Kids Bible Memory Game</h1>
 
     <!-- Overlay Segment -->
-    <div class="overlay-msg">
+    <div id="play" class="overlay-msg visible">
     The Genesis~Click to Begin
         <span class="overlay-msg-small">View Commandments</span>
+        <span id="easy" class="difficulty">Easy</span> 
+        <span id="hard" class="difficulty">Hard</span>
     </div>
     <div id="game-over-msg" class="overlay-msg">
     The Revelation~Game Over
@@ -28,7 +30,7 @@
     <div class="container">
         <div class="info-container">
             <div class="game-info">
-                Timer:<span id="timer">120secs</span>
+                Timer:<span id="timer">100secs</span>
             </div>
             <div class="game-info">
                 Flips:<span id="flips">0</span>
@@ -100,6 +102,7 @@
     </footer>
 
 <!-- Scripts Segment -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="scripts.js"></script>    
 </body>
 </html>
