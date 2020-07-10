@@ -13,8 +13,10 @@ function cardFlip() {
     //Indicates first card is clicked
     cardIsFlipped = true;
     cardOne = this;
-    console.log({cardIsFlipped, cardOne});
-  }
+  }else
+    cardIsFlipped = false;
+    cardTwo = this;
+
 }
 
 cards.forEach(card => card.addEventListener('click', cardFlip));
