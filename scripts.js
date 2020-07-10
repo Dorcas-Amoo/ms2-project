@@ -17,6 +17,9 @@ function cardFlip() {
     //Indicates second card is clicked
     cardIsFlipped = false;
     cardTwo = this;
+
+    console.log(cardOne.dataset.name);
+    console.log(cardTwo.dataset.name);
   }
 }
 
