@@ -18,8 +18,13 @@ function cardFlip() {
     cardIsFlipped = false;
     cardTwo = this;
 
-    console.log(cardOne.dataset.name);
-    console.log(cardTwo.dataset.name);
+    //To check for card match
+    if (cardOne.dataset.name === cardTwo.dataset.name) {
+        cardOne.removeEventListener('click', cardFlip);
+        cardTwo.removeEventListener('click', cardFlip);
+    }
+
+    console.log('Success!');
   }
 }
 
