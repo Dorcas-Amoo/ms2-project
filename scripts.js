@@ -54,10 +54,19 @@ function unflipCards() {
     }, 1500);
 }
 
+//To stop a card being double clicked
 function resetBoard() {
   [cardIsFlipped, boardLock] = [false, false];
   [cardOne, cardTwo] = [null, null];
 }
+
+//To shuffle cards before game starts
+(function shuffle() {
+  cards.forEach(card => {
+    let randomCard = Math.floor(Math.random() * 12);
+    card.style.order = randomCard;
+  });
+})();
 
 cards.forEach(card => card.addEventListener('click', cardFlip));
 
