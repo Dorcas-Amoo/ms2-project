@@ -10,27 +10,37 @@ function cardFlip() {
   this.classList.add('flip');
   
     if (!cardIsFlipped) {
-    //Indicates first card is clicked
-    cardIsFlipped = true;
-    cardOne = this;
+        //Indicates first card is clicked
+        cardIsFlipped = true;
+        cardOne = this;
 }   else {
-    //Indicates second card is clicked
-    cardIsFlipped = false;
-    cardTwo = this;
+        //Indicates second card is clicked
+        cardIsFlipped = false;
+        cardTwo = this;
 
-    //To check for card match
+        checkForCardMatch();
+    }   
+}
+//To check for card match
+function checkForCardMatch(){
     if (cardOne.dataset.name === cardTwo.dataset.name) {
-        cardOne.removeEventListener('click', cardFlip);
-        cardTwo.removeEventListener('click', cardFlip);
-}   else {
-      //Check if not a match and remove flip
-      setTimeout(() => {
+    freezeCards();
+    }else
+    unflipCards();
+}
+
+//For matched cards
+function freezeCards() {
+    cardOne.removeEventListener('click', cardFlip);
+    cardTwo.removeEventListener('click', cardFlip);
+}    
+
+//Check if not a match and remove flip
+function unflipCards() {
+    setTimeout(() => {
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip');
-        }, 1000);
-    }
-
-  }
+    }, 1000);
 }
 
 cards.forEach(card => card.addEventListener('click', cardFlip));
