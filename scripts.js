@@ -8,15 +8,17 @@ let cardOne, cardTwo;
 
 function cardFlip() {
   this.classList.add('flip');
-
-  if (!cardIsFlipped) {
+  
+    if (!cardIsFlipped) {
     //Indicates first card is clicked
     cardIsFlipped = true;
     cardOne = this;
-  }else
+}   else {
+    //Indicates second card is clicked
     cardIsFlipped = false;
     cardTwo = this;
-
+    console.log({cardOne, cardTwo});
+  }
 }
 
 cards.forEach(card => card.addEventListener('click', cardFlip));
