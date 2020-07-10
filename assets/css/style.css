@@ -16,6 +16,13 @@ body {
     background: hsl(39, 92%, 44%);
 }
 
+#play,
+#rules
+#easy
+#hard {
+    cursor: pointer;
+}
+
 /* -------------------------------------------------Images*/
 
 img {
