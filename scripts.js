@@ -4,9 +4,12 @@
 const cards = document.querySelectorAll('.card');
 
 let cardIsFlipped = false;
+let boardLock = false;
 let cardOne, cardTwo;
 
 function cardFlip() {
+    if (boardLock) return;
+
   this.classList.add('flip');
   
     if (!cardIsFlipped) {
@@ -38,10 +41,14 @@ function freezeCards() {
 
 //Check if not a match and remove flip
 function unflipCards() {
+    boardLock = true;
+
     setTimeout(() => {
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip');
-    }, 1000);
+    
+        boardLock = false;
+    }, 1500);
 }
 
 cards.forEach(card => card.addEventListener('click', cardFlip));
