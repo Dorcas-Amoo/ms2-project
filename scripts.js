@@ -7,7 +7,14 @@ let cardIsFlipped = false;
 let cardOne, cardTwo;
 
 function cardFlip() {
-  this.classList.toggle('flip');
+  this.classList.add('flip');
+
+  if (!cardIsFlipped) {
+    //Indicates first card is clicked
+    cardIsFlipped = true;
+    cardOne = this;
+    console.log({cardIsFlipped, cardOne});
+  }
 }
 
 cards.forEach(card => card.addEventListener('click', cardFlip));
